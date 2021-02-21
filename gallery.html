@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>TATUAJE PARA TI</title>
+	<link rel="stylesheet" type="text/css" href="gallery.css">
+	<link rel="stylesheet" type="text/css" href="lightbox.min.css">
+	<script type="text/javascript" src="lightbox-plus-jquery.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+</head>
+<body>
+	<div class="hero">
+		<div class="nav-bar">
+			<div class="nav-logo">
+				<img src="im1.png">
+			</div>
+
+			<div class="nav-links" id="nav-links">
+				<i class="fas fa-times"onclick="closeMenu()"></i>
+				<ul>
+					<a href="#"><li class="active">Gallery</li></a>
+					<a href="index.html"><li class="gandi">HOME</li></a>
+				</ul>
+		
+			</div>
+			<i class="fas fa-bars" onclick="showMenu()"></i>
+		</div>
+		<center>
+			
+		<div class="text" >
+		<h2 >My Gallery</h2>
+		</div>
+	</center>
+		<div class="gallery">
+		<a href="img1.jpg" data-lightbox="mygallery"><img src="img1.jpg"></a>
+		<a href="img2.jpg"data-lightbox="mygallery"><img src="img2.jpg"></a>
+		<a href="img3.jpg"data-lightbox="mygallery"><img src="img3.jpg"></a>
+		<a href="img5.jpg"data-lightbox="mygallery"><img src="img5.jpg"></a>
+		<a href="img6.jpg" data-lightbox="mygallery"><img src="img6.jpg"></a>
+		<a href="img7.jpg"data-lightbox="mygallery"><img src="img7.jpg"></a>
+		<a href="img8.jpg"data-lightbox="mygallery"><img src="img8.jpg"></a>
+		<a href="img9.jpg"data-lightbox="mygallery"><img src="img9.jpg"></a>
+		<a href="img10.jpg"data-lightbox="mygallery"><img src="img10.jpg"></a>
+	</div>
+		
+		
+	</div>
+
+    <script>
+    	var show = document.getElementById("nav-links");
+    	function showMenu(){
+    		show.style.right = "0";
+
+    	}
+    	function closeMenu(){
+    		show.style.right = "-200px";
+
+    	}
+    </script>
+</body>
+</html>
